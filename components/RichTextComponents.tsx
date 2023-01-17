@@ -47,6 +47,7 @@ export const RichTextComponents = {
         {children}
       </blockquote>
     ),
+    normal: ({ children }: any) => <p className="pb-3">{children}</p>,
   },
 
   marks: {

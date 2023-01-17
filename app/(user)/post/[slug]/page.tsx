@@ -95,6 +95,22 @@ async function Post({ params: { slug } }: Props) {
       <div className="mt-10">
         <PortableText value={post.body} components={RichTextComponents} />
       </div>
+
+      <hr className="border-[#F7AB0A] my-10" />
+
+      <div className="m-10 px-10 bg-[#f4b429] py-5 text-white">
+        <div className="flex flex-row items-center gap-x-4 mb-5">
+          <Image
+            className="rounded-full object-cover"
+            src={urlFor(post.author.image).url()}
+            alt={post.author.name}
+            height={60}
+            width={60}
+          />
+          <h3 className="text-lg font-bold">{post.author.name}</h3>
+        </div>
+        <PortableText value={post.author.bio} components={RichTextComponents} />
+      </div>
     </article>
   );
 }
