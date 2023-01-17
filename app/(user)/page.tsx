@@ -21,7 +21,7 @@ export default async function Home() {
         fallback={
           <div role="status">
             <p className="text-center text-lg animate-pulse text-[#F7A80A]">
-              Loading Preview Data...
+              Loading Preview Data in preview mode...
             </p>
           </div>
         }
